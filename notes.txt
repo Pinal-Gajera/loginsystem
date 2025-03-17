@@ -1,0 +1,14 @@
+<!-- To change the language mode (or syntax highlighting) in Visual Studio Code, click on the language indicator in the status bar (right-hand side) and select the desired language from the dropdown, or use the shortcut Ctrl+K M.  -->
+<!-- Shift + Alt + Up/Down(keyboard button) -->
+
+
+password is in plain text in database,
+  should it safe?? or not and why??
+---> in our database we have password in plain text if somone stole our database they can get our user's account and they can stole thier information so
+     the soution is password hashing. by this we store password's hash value insted of password and in code we match both password's hash value. 
+     and for that we need password in code to convert into hash.
+---> In php we have funtion password_hash() and password_verify()
+     password_hash(,password_default)=> 255 character is good.     
+---> password_verify(#[\SensitiveParameter] string $password, string $hash): bool
+     password_verify — Verifies that a password matches a hash
+    
